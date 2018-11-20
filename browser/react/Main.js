@@ -1,7 +1,7 @@
 import React from 'react';
-import { Sidebar } from './Sidebar';
-import { Footer } from './Footer';
-import { AllAlbums } from './AllAlbums';
+import Sidebar from './Sidebar';
+import Footer from './Footer';
+import AllAlbums from './AllAlbums';
 import axios from 'axios';
 import SingleAlbum from './SingleAlbum';
 
@@ -110,8 +110,6 @@ export default class Main extends React.Component {
         </div>
         {this.state.songPlaying && (
           <Footer
-            songPlaying={this.state.songPlaying}
-            audio={this.state.audio}
             toggleAudio={this.toggleAudio}
             selectedAlbum={this.state.selectedAlbum}
             playMusic={this.playMusic}

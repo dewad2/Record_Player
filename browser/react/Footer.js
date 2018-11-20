@@ -1,9 +1,7 @@
 import React from 'react';
 
-export const Footer = props => {
+export default props => {
   const {
-    songPlaying,
-    audio,
     toggleAudio,
     selectedAlbum,
     playNextTrack,
@@ -11,10 +9,7 @@ export const Footer = props => {
     currentIndex,
     progress
   } = props;
-  console.log('selectedAlbum', selectedAlbum);
-  console.log('songPlaying', songPlaying);
   const length = selectedAlbum.songs.length;
-  console.log('length', length);
   let next = (currentIndex + 1) % length;
   let nextTrack = selectedAlbum.songs[next].id;
   let prev = currentIndex === 0 ? length - 1 : currentIndex - 1;

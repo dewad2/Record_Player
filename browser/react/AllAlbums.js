@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleAlbum from './SingleAlbum';
 
-export const AllAlbums = props => {
+export default props => {
   const { Albums, handleClick, selectedAlbum } = props;
   return (
     <div className="col-xs-10">

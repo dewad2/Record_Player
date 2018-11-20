@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Sidebar = props => {
+export default props => {
   const { resetAlbums } = props;
   return (
     <sidebar>
